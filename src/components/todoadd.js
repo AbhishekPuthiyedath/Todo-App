@@ -65,11 +65,11 @@ function Todoadd()
      <form>
             <input type="text" placeholder="Add Activity" className='todo-inputs' onChange={(e)=>setTodotitle(e.target.value)}></input>
             <input type="text" placeholder="Add description" className='todo-inputs'  onChange={(e)=>setTododescr(e.target.value)}></input>
-  <button onClick={handletodo}>Add</button>
+  <button onClick={handletodo} className="add-button">Add</button>
   </form>
   </div>
   <div>
-  <button className={`secondaryBtn $={isComleateScreen  ===false && 'active'} complete-btn`} onClick={()=>setIsCompleateScreen(false)}>Todo Task</button>
+  <button className={`secondaryBtn $={isComleateScreen  ===false && 'active'} button-todo`} onClick={()=>setIsCompleateScreen(false)}>Todo Task</button>
   <button className={`secondaryBtn $={isComleateScreen  ===true && 'active'} compleated-btn`} onClick={()=>setIsCompleateScreen(true)}>Compleated</button>
   </div>
             <Todolist todoArray={todo} handleDelete={handleDelete} isCompleated={isComleateScreen} compleatedTodo={compleatedTodos} Compleated={handeleCompleated} handleDeleteCompleated={handleDeleteCompleatedTodo}/>

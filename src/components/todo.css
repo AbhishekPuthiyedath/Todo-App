@@ -164,7 +164,14 @@
     pointer-events: none;
     transition: all 0.3s ease;
   }
-  
+  .button-todo{
+    background-color:green;
+    color: white;
+    font-size: 15px;
+    width:100px;
+    height:50px;
+    border: none;
+  }
   .select:hover::after {
     background: white;
     color: #ff6f47;
@@ -178,3 +185,150 @@
   .compleated-btn:hover{
    background-color: #0c3065;
   }
+  @media screen and (max-width:600px){
+    .todobody{
+      padding-top: 50px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+   .add-button{
+    width:50px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #1b1b1c;
+    color: white;
+    margin: 0;
+    padding: 0; 
+    }
+    form button:hover {
+      color: white;
+      background: rgb(34, 31, 30);
+    }
+    .todo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .todo-list {
+      min-width: 30%;
+      list-style: none;
+    }
+    .todo {
+      background: white;
+      color: black;
+      margin-top: 1rem;
+      padding-left: 2rem;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.5s ease;
+      width:90%; 
+    }
+    .todo-inputs{
+      width:150px;
+      height: 30px;
+      font-size: 20px;
+    }
+    .todo-item-desc{
+      font-size: 10px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .todo-item-compleate{
+      font-size: 13px;
+      font-weight: lighter;
+      padding-left: 50px;;
+    }
+    .todohold{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .trash-btn,
+    .complete-btn {
+      width:50px;
+      color: white;
+      background: #ff6f47;
+      font-size: 10px;
+      cursor: pointer;
+      border: none;
+      padding: 1rem;
+    }
+    .button-todo{
+      background-color:green;
+      color: white;
+      font-size: 15px;
+      width:100px;
+      height:50px;
+      border: none;
+    }
+    .compleated-btn{
+      background-color: #1b6de8;
+    }
+    .complete-btn {
+      background: rgb(83, 196, 83);
+    }
+    .fa-check,
+    .fa-trash {
+      pointer-events: none;
+    }
+    .todo-item{
+      font-size: 15px;
+      width: 100px;
+    }
+    .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+    .fall {
+      transform: translateY(8rem) rotateZ(20deg);
+      opacity: 0;
+    }
+    /* select button filter button */
+    select {
+      -web-kit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      border: none;
+      padding: 1rem;
+      width: 10rem;
+      cursor: pointer;
+      color: #ff6f47;
+    }
+    
+    .select {
+      margin: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .select:after {
+      content: "\25BC";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #ff6f47;
+      color: white;
+      padding: 1rem;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    
+    .select:hover::after {
+      background: white;
+      color: #ff6f47;
+    }
+    .trash-btn:hover{
+      background-color: #b7171f;
+    }
+    .complete-btn:hover{
+      background-color: #1f6b28;
+    }
+    .compleated-btn:hover{
+     background-color: #0c3065;
+    }
+  }
+  
